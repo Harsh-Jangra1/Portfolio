@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-hover: #358f80;
+
+  --color-facebook-hover: #1877F2;
+  --color-twitter-hover: #1DA1F2;
+  --color-linkedin-hover: #0077b5;
+  --color-github-hover: #2B3137;
+
+  --font-family-main: 'Nunito';
+  --font-family-body: 'Quicksand';
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--font-family-main);
+  display: flex;
+}
+
+.container-left {
+  width: 18vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+}
+
+.container-right {
+  width: 81vw;
+  min-height: 100vh;
+  position: absolute;
+  right: 0;
+}
+
+/* ----------------------------------------------------------------
+				# 01 Navbar
+-----------------------------------------------------------------*/
+header {
+  width: 100%;
+  height: 100%;
+  background: #1d1d1d;
+  place-items: center;
+}
+
+nav .aside {
+  display: block;
+  justify-content: center;
+}
+
+nav .aside .my-img {
+  width: 100%;
+  margin: auto;
+  padding-top: 40px;
+}
+
+nav .aside .my-img img {
+  border-radius: 50%;
+  border: 10px solid #444444;
+}
+
+nav .aside .my-name h2 {
+  color: var(--color-white);
+  margin-bottom: 65px;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav ul.nav-list {
+  display: block;
+  margin-bottom: 70px;
+}
+
+nav ul.nav-list li {
+  list-style: none;
+  padding: 10px 0;
+  margin-block: 1px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+nav ul.nav-list li.active a {
+  color: var(--color-hover);
+}
+
+nav ul.nav-list li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+nav ul.nav-list li:hover a {
+  color: var(--color-hover);
+}
+
+nav ul.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul.social-list li {
+  list-style: none;
+  padding: 2px 7px;
+  margin-inline: 2px;
+  font-size: 0.9em;
+}
+
+nav ul.social-list li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+nav ul.social-list li:hover a {
+  color: var(--color-hover);
+}
+
+nav ul.social-list li.facebook:hover a {
+  color: var(--color-facebook-hover);
+}
+
+nav ul.social-list li.twitter:hover a {
+  color: var(--color-twitter-hover);
+}
+
+nav ul.social-list li.linkedin:hover a {
+  color: var(--color-linkedin-hover);
+}
+
+nav ul.social-list li.github:hover a {
+  color: var(--color-github-hover);
+}
+
+/* -------------------------------------------------------------------------
+          # 02 Main
+------------------------------------------------------------------------- */
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* -------------------------------------------------------------------------
+          # 03 Section Home
+------------------------------------------------------------------------- */
+
+section#home {
+  display: grid;
+  align-content: center;
+  width: 100%;
+  background-image: linear-gradient(#000000bb, #000000bb), url(/My-Portfolio/src/assets/images/hero-bg.jpg);
+  color: #FFFFFF;
+  text-align: center;
+}
+
+section#home span.welcome-text {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+section#home .type-string h1 {
+  font-size: 3.5em;
+  margin-block: 20px;
+}
+
+section#home p.address {
+  font-size: 1.5em;
+}
+
+section#home button.hire--btn {
+  margin: 40px auto;
+  padding: 13px 35px;
+  background: transparent;
+  color: var(--color-hover);
+  border: 2px solid var(--color-hover);
+  border-radius: 50px;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: 0.4s all ease;
+}
+
+section#home button.hire--btn:hover {
+  background: var(--color-hover);
+  color: var(--color-white);
+}
+
+/* -------------------------------------------------------------------------
+          # 03 Section About
+------------------------------------------------------------------------- */
+
+section#about {
+  background: #2B3137;
+  z-index: 1;
+}
+
+section#about h2 {
+  font-size: 2.5em;
+  padding: 100px 10px 50px 10px;
+  text-align: center;
+  position: relative;
+  z-index: inherit;
+  color: var(--color-white);
+}
+
+section#about h2::before {
+  width: 100%;
+  content: 'About Me';
+  font-size: 3.5em;
+  color: #363c42;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+section#about h2::after {
+  content: '';
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7%;
+  height: 3px;
+  background: var(--color-hover);
+  border-radius: 15px;
+}
+
+section#about .about-content {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-flow: row;
+  color: var(--color-white);
+}
+
+section#about .about-content .content {
+  width: 60%;
+  padding-left: 40px;
+}
+
+section#about .about-content .content h3 {
+  font-size: 1.7em;
+  margin-block: 15px;
+}
+
+section#about .about-content .content h3 span.name {
+  color: var(--color-hover);
+}
+
+section#about .about-content .content p {
+  font-size: 1.1em;
+  line-height: 25px;
+}
+
+section#about .about-content .content p:nth-child(2) {
+  margin-block: 15px;
+}
+
+section#about .about-content .personal-content {
+  width: 30%;
+  margin: 20px 40px 30px 20px;
+}
+
+section#about .about-content .personal-content h3 {
+  font-size: 1.1em;
+  padding: 13px 0;
+  border-bottom: 1px solid #999999;
+}
+
+section#about .about-content .personal-content h3 span:nth-child(2) {
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+section#about .about-content .personal-content a.btn--cv {
+  background: var(--color-hover);
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 15px 45px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+section#about .feature-boxes {
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+  width: 90%;
+  margin: auto;
+  padding: 45px 0 80px 0;
+}
+
+section#about .feature-boxes .feature-box {
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #494949;
+  color: var(--color-white);
+  padding: 15px 0;
+  text-align: center;
+}
+
+section#about .feature-boxes .feature-box h3 {
+  font-size: 3em;
+}
+
+/* -------------------------------------------------------------------------
+          # 03 Section Services
+------------------------------------------------------------------------- */
+
+section#services {
+  background: #343a40;
+  z-index: 1;
+}
+
+section#services h2 {
+  font-size: 2.5em;
+  padding: 100px 10px 50px 10px;
+  text-align: center;
+  position: relative;
+  z-index: inherit;
+  color: var(--color-white);
+}
+
+section#services h2::before {
+  width: 100%;
+  content: 'Services';
+  font-size: 3.5em;
+  color: #3c4145;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+section#services h2::after {
+  content: '';
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7%;
+  height: 3px;
+  background: var(--color-hover);
+  border-radius: 15px;
+}
+
+section#services .service-content {
+  display: flex;
+  gap: 40px 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 4%;
+}
+
+section#services .content-box {
+  padding: 10px;
+  width: 50%;
+  flex-shrink: 1;
+  flex-basis: 39%;
+  color: #FFFFFF;
+  display: flex;
+}
+
+section#services .content-box .box-icon {
+  background: #2d2d2d;
+  color: var(--color-hover);
+  padding: 15px 22px;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  font-size: 2.2em;
+}
+
+section#services .content-box h3 {
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+section#services .content-box p {
+  padding-left: 20px;
+  font-size: 1em;
+  line-height: 25px;
+}

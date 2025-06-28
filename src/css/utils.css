@@ -1,0 +1,23 @@
+.ham-burger {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+.ham-burger .line {
+    width: 30px;
+    height: 2px;
+    margin-top: 5px;
+    background: #000000;
+    float: right;
+
+}
+
+.ham-burger .line#line1 {
+    width: 20px;
+    float: left;
+}
+
+.ham-burger .line#line3 {
+    width: 20px;
+}
