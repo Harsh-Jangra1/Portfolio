@@ -1,0 +1,80 @@
+/* 🌞 LIGHT THEME (Default) */
+:root {
+    /* 🎨 Colors */
+    --primary-color: #9A3F3F;
+    --secondary-color: #C1856D;
+    --bg-color: #FBF9D1;
+    --text-color: #000000;
+    --accent-color: #E6CFA9;
+    --accent-hover-color: #FFFFFF;
+    --border-color: #C1856D;
+
+    --heading-color: #9A3F3F;
+    --muted-text-color: #555555;
+    --light-bg: #FFFFFF;
+    --dark-bg: #000000;
+
+    /* 🖋 Typography */
+    --font-main: 'Nunito', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --font-alt: 'Montserrat', sans-serif;
+
+    /* 🔳 Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+    /* ⚡ Transitions */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-medium: 0.4s ease-in-out;
+    --transition-slow: 0.6s ease-in-out;
+}
+
+/* 🌙 DARK THEME */
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #FFFFFF;
+    --primary-color: #E6CFA9;
+    --secondary-color: #C1856D;
+    --accent-color: #9A3F3F;
+    --accent-hover-color: #C1856D;
+    --border-color: #333333;
+
+    --heading-color: #E6CFA9;
+    --muted-text-color: #AAAAAA;
+
+    --shadow-sm: 0 1px 3px rgba(255, 255, 255, 0.1);
+    --shadow-md: 0 4px 6px rgba(255, 255, 255, 0.1);
+    --shadow-lg: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* 🖥 GLOBAL STYLES */
+html {
+    scroll-behavior: smooth;
+    font-size: 80%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color var(--transition-medium), color var(--transition-medium);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
+a,
+button {
+    cursor: pointer;
+}
