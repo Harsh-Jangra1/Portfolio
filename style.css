@@ -2,6 +2,7 @@
     --primary-color: #9A3F3F;
     --secondary-color: #C1856D;
     --bg-color: #fffee9;
+    --bg-dark: #44444E;
     --text-color: #000000;
     --text-color-white: #FFFFFF;
     --accent-color: #E6CFA9;
@@ -262,4 +263,151 @@ section#home {
     height: 100%;
     object-fit: cover;
     transition: var(--transition-medium);
+}
+
+section#about {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 10%;
+    background: var(--bg-dark);
+}
+
+section#about .section-title {
+    font-family: var(--font-main);
+    color: var(--accent-color);
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+    margin: 0 3rem;
+    position: relative;
+    top: 15%;
+    left: 42%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+}
+
+section#about .section-title::after {
+    content: '';
+    position: absolute;
+    left: 43.7%;
+    top: 45%;
+    width: 4rem;
+    height: 0.1rem;
+    background: var(--accent-color);
+    transform: translate(-50%, -50%);
+}
+
+.about-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.about-detail .about-image-container {
+    flex: 1;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--border-color);
+    border-radius: 20px 70px / 90px 30px;
+    box-shadow: var(--shadow-lg);
+    background: #000;
+}
+
+.about-detail .about-content {
+    flex: 2;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color-white);
+    margin: 2rem 0 0 2rem;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--font-main);
+}
+
+.about-text h3 .text-name {
+    color: var(--accent-color);
+}
+
+.about-role h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-top: .1rem;
+    font-family: var(--font-alt);
+}
+
+.about-content p {
+    margin: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    color: var(--text-color-white);
+    font-family: var(--font-main);
+    letter-spacing: .06rem;
+    line-height: 1.8;
+}
+
+.about-content .about-personal-list {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-family: var(--font-main);
+}
+
+.about-content .about-personal-list .about-item {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    /* gap: 1rem; */
+    margin-bottom: 1rem;
+}
+
+.about-content .about-personal-list .about-item span:first-child {
+    display: inline-block;
+    min-width: 100px;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.about-content .about-personal-list .about-item span:last-child {
+    margin-left: 2rem;
+    font-weight: 600;
+    color: var(--text-color-white);
+}
+
+.about-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.about-content .about-info li a {
+    padding: 0.7rem 1.5rem;
+    margin-right: 1rem;
+    background: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-fast);
+}
+
+.about-content .about-info li a:hover {
+    background: var(--accent-hover-color);
+    color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
 }
