@@ -168,7 +168,6 @@ main {
     font-family: var(--font-body);
     font-size: 1.1rem;
     line-height: 1.8;
-
 }
 
 section#home {
@@ -692,4 +691,24 @@ section#skills {
 
 .contact-form .btn:hover {
     background: #2563eb;
+}
+
+/* Footer */
+.foot-container {
+    background: #0f172a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.foot-container footer p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #94a3b8;
+    letter-spacing: 0.5px;
+}
+
+.foot-container footer p:hover {
+    color: #3b82f6;
+    transition: color 0.3s ease;
 }
