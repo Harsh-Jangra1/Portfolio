@@ -1,347 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Basic SEO Info -->
+    <meta name="author" content="Harsh Jangra" />
+    <meta
+      name="description"
+      content="Harsh's personal portfolio website showcasing projects, skills, and contact details. Built with HTML, CSS, and JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="Harsh, Portfolio, Frontend Developer, Web Developer, HTML, CSS, JavaScript, Projects"
+    />
+    <title>Harsh Jangra | Frontend & Web Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Basic SEO Info -->
-  <meta name="author" content="Harsh Jangra" />
-  <meta name="description"
-    content="Harsh's personal portfolio website showcasing projects, skills, and contact details. Built with HTML, CSS, and JavaScript." />
-  <meta name="keywords"
-    content="Harsh, Portfolio, Frontend Developer, Web Developer, HTML, CSS, JavaScript, Projects" />
-  <title>Harsh Jangra | Frontend & Web Developer</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet" />
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="./style.css" />
-</head>
+  <body data-theme="light">
+    <div class="container">
+      <!-- Header -->
+      <div class="head-container">
+        <header>
+          <a href="#" class="text-logo">
+            <h1 class="logo">Harsh<span>.</span></h1>
+          </a>
+          <i class="fas fa-bars menu-icon" aria-label="Menu"></i>
+          <nav class="navbar">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
 
-<body data-theme="light">
-  <div class="container">
-    <!-- Header -->
-    <div class="head-container">
-      <header>
-        <a href="#" class="text-logo">
-          <h1 class="logo">Harsh<span>.</span></h1>
-        </a>
-        <i class="fas fa-bars menu-icon"></i>
-        <nav class="navbar">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#skills" class="nav-link">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-container">
-      <main>
-        <!-- Home Section -->
-        <section id="home" class="home-section section">
-          <div class="home-content">
-            <h1>Hello, I'm <span id="auto-type"></span></h1>
-            <p>
-              I'm a passionate Frontend Developer and Web Developer dedicated
-              to crafting beautiful and functional websites. Explore my
-              portfolio to see my projects and skills.
-            </p>
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#contact" class="btn">Contact Me</a>
-          </div>
-          <div class="home-image-container">
-            <div class="home-image">
-              <div class="img-item">
-                <img src="" alt=""></img>
-              </div>
+      <!-- Main Content -->
+      <div class="main-container">
+        <main>
+          <!-- Home Section -->
+          <section id="home" class="home-section section">
+            <div class="home-content">
+              <h1>Hello, I'm <span id="auto-type"></span></h1>
+              <p>
+                I'm a passionate Frontend Developer and Web Developer dedicated
+                to crafting beautiful and functional websites. Explore my
+                portfolio to see my projects and skills.
+              </p>
+              <a href="#projects" class="btn">View Projects</a>
+              <a href="#contact" class="btn">Contact Me</a>
             </div>
-          </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about-section section">
-          <div class="section-title">
-            <h2>About Me</h2>
-          </div>
-          <div class="about-detail">
-            <div class="about-image-container">
-              <div class="about-image">
+            <div class="home-image-container">
+              <div class="home-image">
                 <div class="img-item">
-                  <img src="about.png" alt="About Harsh Jangra" loading="lazy" />
+                  <img src="images/profile.jpg" alt="Harsh Jangra" />
                 </div>
               </div>
             </div>
-            <div class="about-content">
-              <div class="about-text">
-                <h3>Hi, I'm <span class="text-name">Harsh Jangra</span></h3>
-              </div>
-              <div class="about-role">
-                <h3>Frontend & Web Developer</h3>
-              </div>
-              <p>
-                I am a passionate Frontend Developer and Web Developer
-                dedicated to crafting beautiful and functional websites. With
-                a strong foundation in HTML, CSS, and JavaScript, I strive to
-                create user-friendly experiences that leave a lasting
-                impression.
-              </p>
-              <ul class="about-personal-list">
-                <li class="about-item">
-                  <span>Name</span><span>:</span><span>Harsh</span>
-                </li>
-                <li class="about-item">
-                  <span>Address</span><span>:</span><span>Beri Gate, Jhajjar, Haryana - 124103</span>
-                </li>
-                <li class="about-item">
-                  <span>Date Of Birth</span>:<span></span><span>22 Jun 2004</span>
-                </li>
-                <li class="about-item">
-                  <span>Phone</span><span>:</span><span>+91 9050293435</span>
-                </li>
-                <li class="about-item">
-                  <span>Language</span><span>:</span><span>Hindi, English</span>
-                </li>
-                <li class="about-item">
-                  <span>Email</span><span>:</span><span>harshjangra021@gmail.com</span>
-                </li>
-                <li class="about-item">
-                  <span>Freelancer</span><span>:</span><span>Available</span>
-                </li>
-                <li class="about-item">
-                  <span>Website</span><span>:</span><span>https://harsh-jangra-reusme.web.app</span>
-                </li>
-              </ul>
-              <ul class="about-info">
-                <li><a href="#contact">Hire Me</a></li>
-                <li><a href="#" download="Harsh-Resume">Download CV</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- Skills Section -->
-        <section id="skills">
-          <div class="skills-title">
-            <h2>My Skills</h2>
-            <p>Technologies I use to create amazing web experiences</p>
-          </div>
-          <div class="skills-grid">
-            <!-- Skill Item -->
-            <div class="skill-card">
-              <i class="fa-brands fa-html5" style="color:#E44D26;"></i>
-              <h3>HTML5</h3>
-              <div class="progress-bar">
-                <div class="progress" style="width: 90%;"></div>
-              </div>
-              <span>90%</span>
+          <!-- About Section -->
+          <section id="about" class="about-section section">
+            <div class="section-title">
+              <h2>About Me</h2>
             </div>
-            <div class="skill-card">
-              <i class="fa-brands fa-css3-alt" style="color:#1572B6;"></i>
-              <h3>CSS3</h3>
-              <div class="progress-bar">
-                <div class="progress" style="width: 90%;"></div>
+            <div class="about-detail">
+              <div class="about-image-container">
+                <div class="about-image">
+                  <div class="img-item">
+                    <img
+                      src="images/about.png"
+                      alt="About Harsh Jangra"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               </div>
-              <span>90%</span>
-            </div>
-            <div class="skill-card">
-              <i class="fa-brands fa-js" style="color:#F7DF1E;"></i>
-              <h3>JavaScript</h3>
-              <div class="progress-bar">
-                <div class="progress" style="width: 90%;"></div>
+              <div class="about-content">
+                <div class="about-text">
+                  <h3>Hi, I'm <span class="text-name">Harsh Jangra</span></h3>
+                </div>
+                <div class="about-role">
+                  <h3>Frontend & Web Developer</h3>
+                </div>
+                <p>
+                  I am a passionate Frontend Developer and Web Developer
+                  dedicated to crafting beautiful and functional websites. With
+                  a strong foundation in HTML, CSS, and JavaScript, I strive to
+                  create user-friendly experiences that leave a lasting
+                  impression.
+                </p>
+                <ul class="about-personal-list">
+                  <li class="about-item">
+                    <span>Name</span><span>:</span><span>Harsh</span>
+                  </li>
+                  <li class="about-item">
+                    <span>Address</span><span>:</span
+                    ><span>Beri Gate, Jhajjar, Haryana - 124103</span>
+                  </li>
+                  <li class="about-item">
+                    <span>Date Of Birth</span><span>:</span
+                    ><span>22 Jun 2004</span>
+                  </li>
+                  <li class="about-item">
+                    <span>Phone</span><span>:</span><span>+91 9050293435</span>
+                  </li>
+                  <li class="about-item">
+                    <span>Language</span><span>:</span
+                    ><span>Hindi, English</span>
+                  </li>
+                  <li class="about-item">
+                    <span>Email</span><span>:</span
+                    ><span>harshjangra021@gmail.com</span>
+                  </li>
+                  <li class="about-item">
+                    <span>Freelancer</span><span>:</span><span>Available</span>
+                  </li>
+                  <li class="about-item">
+                    <span>Website</span><span>:</span
+                    ><span
+                      ><a
+                        href="https://harsh-jangra-reusme.web.app"
+                        target="_blank"
+                        >harsh-jangra-resume.web.app</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+                <ul class="about-info">
+                  <li><a href="#contact">Hire Me</a></li>
+                  <li>
+                    <a href="assets/Harsh-Resume.pdf" download="Harsh-Resume"
+                      >Download CV</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <span>90%</span>
             </div>
-            <div class="skill-card">
-              <i class="fa-solid fa-wind" style="color:#38BDF8;"></i>
-              <h3>Tailwind CSS</h3>
-              <div class="progress-bar">
-                <div class="progress" style="width: 85%;"></div>
-              </div>
-              <span>85%</span>
-            </div>
-            <div class="skill-card">
-              <i class="fa-brands fa-git-alt" style="color:#F05032;"></i>
-              <h3>Git & GitHub</h3>
-              <div class="progress-bar">
-                <div class="progress" style="width: 85%;"></div>
-              </div>
-              <span>85%</span>
-            </div>
-            <div class="skill-card">
-              <i class="fa-brands fa-react" style="color:#61DAFB;"></i>
-              <h3>React (Learning)</h3>
-              <div class="progress-bar">
-                <div class="progress" style="width: 70%;"></div>
-              </div>
-              <span>70%</span>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-          <div class="projects-title">
-            <h2>Projects</h2>
-            <p>Click Next/Prev to see my projects</p>
-          </div>
+          <!-- Skills Section -->
+          <section id="skills">
+            <div class="skills-title">
+              <h2>My Skills</h2>
+              <p>Technologies I use to create amazing web experiences</p>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <i class="fa-brands fa-html5" style="color: #e44d26"></i>
+                <h3>HTML5</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 90%"></div>
+                </div>
+                <span>90%</span>
+              </div>
+              <div class="skill-card">
+                <i class="fa-brands fa-css3-alt" style="color: #1572b6"></i>
+                <h3>CSS3</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 90%"></div>
+                </div>
+                <span>90%</span>
+              </div>
+              <div class="skill-card">
+                <i class="fa-brands fa-js" style="color: #f7df1e"></i>
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 90%"></div>
+                </div>
+                <span>90%</span>
+              </div>
+              <div class="skill-card">
+                <i class="fa-solid fa-wind" style="color: #38bdf8"></i>
+                <h3>Tailwind CSS</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 85%"></div>
+                </div>
+                <span>85%</span>
+              </div>
+              <div class="skill-card">
+                <i class="fa-brands fa-git-alt" style="color: #f05032"></i>
+                <h3>Git & GitHub</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 85%"></div>
+                </div>
+                <span>85%</span>
+              </div>
+              <div class="skill-card">
+                <i class="fa-brands fa-react" style="color: #61dafb"></i>
+                <h3>React (Learning)</h3>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 70%"></div>
+                </div>
+                <span>70%</span>
+              </div>
+            </div>
+          </section>
 
-          <div class="project-slider">
-            <!-- Project Cards -->
-            <div class="project-card active">
-              <img src="images/calculator.jpg" alt="Calculator Project">
-              <div class="project-content">
-                <h3>Calculator</h3>
-                <p>A simple, responsive calculator built with HTML, CSS, and JavaScript.</p>
-                <div class="buttons">
-                  <a href="https://github.com/yourusername/calculator" target="_blank">GitHub</a>
-                  <a href="#">Live Demo</a>
+          <!-- Projects Section -->
+          <section id="projects">
+            <div class="projects-title">
+              <h2>Projects</h2>
+              <p>Click Next/Prev to see my projects</p>
+            </div>
+            <div class="project-slider">
+              <div class="project-card active">
+                <img src="images/calculator.jpg" alt="Calculator Project" />
+                <div class="project-content">
+                  <h3>Calculator</h3>
+                  <p>
+                    A simple, responsive calculator built with HTML, CSS, and
+                    JavaScript.
+                  </p>
+                  <div class="buttons">
+                    <a
+                      href="https://github.com/yourusername/calculator"
+                      target="_blank"
+                      >GitHub</a
+                    >
+                    <a href="#">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <img src="images/tictactoe.jpg" alt="Tic Tac Toe Project" />
+                <div class="project-content">
+                  <h3>Tic Tac Toe</h3>
+                  <p>A fun 2-player game with winning logic and dynamic UI.</p>
+                  <div class="buttons">
+                    <a
+                      href="https://github.com/yourusername/tic-tac-toe"
+                      target="_blank"
+                      >GitHub</a
+                    >
+                    <a href="#">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <img src="images/piggame.jpg" alt="Pig Game Project" />
+                <div class="project-content">
+                  <h3>Pig Game</h3>
+                  <p>
+                    A dice game to test your luck. Built with JavaScript DOM
+                    manipulation.
+                  </p>
+                  <div class="buttons">
+                    <a
+                      href="https://github.com/yourusername/pig-game"
+                      target="_blank"
+                      >GitHub</a
+                    >
+                    <a href="#">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <img src="images/todolist.jpg" alt="To-Do List Project" />
+                <div class="project-content">
+                  <h3>To-Do List</h3>
+                  <p>
+                    A simple task manager to add, delete, and track your to-dos
+                    easily.
+                  </p>
+                  <div class="buttons">
+                    <a
+                      href="https://github.com/yourusername/todo-list"
+                      target="_blank"
+                      >GitHub</a
+                    >
+                    <a href="#">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <img
+                  src="images/guessnumber.jpg"
+                  alt="Guess My Number Project"
+                />
+                <div class="project-content">
+                  <h3>Guess My Number</h3>
+                  <p>
+                    A number guessing game with score tracking and
+                    randomization.
+                  </p>
+                  <div class="buttons">
+                    <a
+                      href="https://github.com/yourusername/guess-my-number"
+                      target="_blank"
+                      >GitHub</a
+                    >
+                    <a href="#">Live Demo</a>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="slider-buttons">
+              <button id="prevBtn" aria-label="Previous Project">Prev</button>
+              <button id="nextBtn" aria-label="Next Project">Next</button>
+            </div>
+          </section>
 
-            <div class="project-card">
-              <img src="images/tictactoe.jpg" alt="Tic Tac Toe Project">
-              <div class="project-content">
-                <h3>Tic Tac Toe</h3>
-                <p>A fun 2-player game with winning logic and dynamic UI.</p>
-                <div class="buttons">
-                  <a href="https://github.com/yourusername/tic-tac-toe" target="_blank">GitHub</a>
-                  <a href="#">Live Demo</a>
+          <!-- Contact Section -->
+          <section id="contact" class="contact-section section">
+            <div class="section-title">
+              <h2>Contact</h2>
+            </div>
+            <div class="contact-container">
+              <div class="contact-phone contact-info">
+                <p>
+                  <a href="tel:+919050293435" class="phone">+91-9050293435</a>
+                </p>
+              </div>
+              <div class="contact-mail contact-info">
+                <p>
+                  <a href="mailto:harshjangra021@gmail.com" class="email"
+                    >harshjangra021@gmail.com</a
+                  >
+                </p>
+              </div>
+              <div class="contact-location contact-info">
+                <p>
+                  <a
+                    href="https://maps.google.com/?q=Beri+Gate,+Jhajjar,+Haryana"
+                    class="address"
+                    target="_blank"
+                    >Go To Google Map</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form action="#" method="POST">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter Your Name"
+                    required
+                  />
                 </div>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <img src="images/piggame.jpg" alt="Pig Game Project">
-              <div class="project-content">
-                <h3>Pig Game</h3>
-                <p>A dice game to test your luck. Built with JavaScript DOM manipulation.</p>
-                <div class="buttons">
-                  <a href="https://github.com/yourusername/pig-game" target="_blank">GitHub</a>
-                  <a href="#">Live Demo</a>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Enter Your Subject"
+                    required
+                  />
                 </div>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <img src="images/todolist.jpg" alt="To-Do List Project">
-              <div class="project-content">
-                <h3>To-Do List</h3>
-                <p>A simple task manager to add, delete, and track your to-dos easily.</p>
-                <div class="buttons">
-                  <a href="https://github.com/yourusername/todo-list" target="_blank">GitHub</a>
-                  <a href="#">Live Demo</a>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Your Email"
+                    required
+                  />
                 </div>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <img src="images/guessnumber.jpg" alt="Guess My Number Project">
-              <div class="project-content">
-                <h3>Guess My Number</h3>
-                <p>A number guessing game with score tracking and randomization.</p>
-                <div class="buttons">
-                  <a href="https://github.com/yourusername/guess-my-number" target="_blank">GitHub</a>
-                  <a href="#">Live Demo</a>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter Your Message"
+                    required
+                  ></textarea>
                 </div>
-              </div>
+                <button type="submit" class="btn">Send Message</button>
+              </form>
             </div>
-          </div>
-          <!-- Navigation Buttons -->
-          <div class="slider-buttons">
-            <button id="prevBtn">Prev</button>
-            <button id="nextBtn">Next</button>
-          </div>
-        </section>
+          </section>
+        </main>
+      </div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section section">
-          <div class="section-title">
-            <h2>Contact</h2>
-          </div>
-          <div class="contact-container">
-            <div class="contact-phone contact-info">
-              <p>
-                <a href="tel:+91-9050293435" class="phone">+91-9050293435</a>
-              </p>
-            </div>
-            <div class="contact-mail contact-info">
-              <p>
-                <a href="mailto:harshjangra021@gmail.com" class="email">harshjangra021@gmail.com</a>
-              </p>
-            </div>
-            <div class="contact-location contact-info">
-              <p><a href="#" class="address">Go To Google Map</a></p>
-            </div>
-          </div>
-          <div class="contact-form">
-            <form action="">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter Your Name" required />
-              </div>
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="Enter Your Subject" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
-              </div>
-              <button type="submit" class="btn">Send Message</button>
-            </form>
-          </div>
-        </section>
-      </main>
+      <!-- Footer -->
+      <div class="foot-container">
+        <footer>
+          <p>&copy; 2024 Harsh Jangra. All rights reserved.</p>
+        </footer>
+      </div>
     </div>
 
-    <!-- Footer -->
-    <div class="foot-container">
-      <footer>
-        <p>&copy; 2024 Harsh Jangra. All rights reserved.</p>
-      </footer>
-    </div>
-  </div>
-
-  <!-- JS Files -->
-  <script src="./script.js"></script>
-  <script src="https://kit.fontawesome.com/59965007f8.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      new Typed("#auto-type", {
-        strings: ["Harsh Jangra", "a Frontend Developer", "a Web Developer"],
-        loop: true,
-        typeSpeed: 50,
-        backSpeed: 50,
-        backDelay: 1000,
+    <!-- JS Files -->
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/59965007f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Typed("#auto-type", {
+          strings: ["Harsh Jangra", "a Frontend Developer", "a Web Developer"],
+          loop: true,
+          typeSpeed: 50,
+          backSpeed: 50,
+          backDelay: 1000,
+        });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
